@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Guest
   - Goal
+  - HealthBar
   layers:
   - Default
   - TransparentFX

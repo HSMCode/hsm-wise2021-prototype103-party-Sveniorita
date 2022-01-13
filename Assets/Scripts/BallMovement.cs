@@ -5,7 +5,7 @@ using UnityEngine;
 public class BallMovement : MonoBehaviour
 {
 
-    public float speed;
+   // public float speed;
    // public float time = 5f;
 
 
@@ -19,7 +19,7 @@ public class BallMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //transform.Translate(Vector3.up * speed * Time.deltaTime);
+      //  transform.Translate(Vector3.left * speed * Time.deltaTime);
 
 
 
