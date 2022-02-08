@@ -12,7 +12,7 @@ public class PolonaiseScript : MonoBehaviour
     public float damping = 6.0f;
 
 
-    void Update()
+    void FixedUpdate()
     {
         if (transform.position != target[current].position)
         {

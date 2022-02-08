@@ -14,7 +14,7 @@ public class BeerPongScript : MonoBehaviour
 
 
 
-    private void Update()
+    private void FixedUpdate()
     {
 
         if(currentTimeToSpawn > 0)

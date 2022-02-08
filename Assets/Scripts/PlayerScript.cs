@@ -39,11 +39,7 @@ public class PlayerScript : MonoBehaviour
         }
 
 
-        if (currentHealth <= 0)
-        {
-            //restart the scene when Health Bar expired
-            SceneManager.LoadScene("01_Level");
-        }
+ 
     }
 
 
@@ -60,11 +56,12 @@ public class PlayerScript : MonoBehaviour
         //Check if Player collides with Guests (Tagged with Guest)
         if (collision.gameObject.tag == "Guest")
         {
-    
+
+            //Damage when Player hits Guest
+            TakeDamage(25);
+
             player.transform.position = spawnPoint.transform.position; // Reset Player Position
             
-            //Damage when Player hits Guest
-            TakeDamage(25); 
         }
 
         // Check if Player collides with Finish (Tagged with Goal)
@@ -73,6 +70,12 @@ public class PlayerScript : MonoBehaviour
             // Start next Scene when player reaches Goal
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
+        }
+
+        if (currentHealth <= 0)
+        {
+            //restart the scene when Health Bar expired
+            SceneManager.LoadScene("06_Lost Panel");
         }
     }
 
