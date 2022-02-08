@@ -1,9 +1,6 @@
-# Project Title
+# Party Escape Game
 
-This project was imported using the **Unity 2020.3.x** empty base project.
-Please fill out/change the ReadMe according to your needs, following the guide below.
-
-One Paragraph of project description goes here.
+This Project contains a Game about a Party Guest wanting to leave the Party. After 4 Levels you made it.
 
 ## Summary
 
@@ -25,9 +22,8 @@ for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-    Give examples
+- Unity 2020.3.19f1
+- Visual Studios
 
 ### Installing
 
@@ -100,6 +96,25 @@ details
 
 ## Acknowledgments
 
-  - Hat tip to anyone whose code was used
-  - Inspiration
-  - etc
+Textures from Unity AssetStore:
+
+"POLYTEX - Home" Assets by "A3D"
+www.artstation.com/a3d
+Licence "Asset Store Terms of Service and EULA" 
+
+Floor Texture by "Texture Haven"
+https://assetstore.unity.com/packages/2d/textures-materials/floor-textures-4k-179126
+Licence "Asset Store Terms of Service and EULA" 
+
+
+Sound FX from FreeSound.org:
+
+"Goa Trance Concert Peoples Noise Atmo Surrooung" by "szegvari"
+https://freesound.org/people/szegvari/sounds/612611/
+Licence "Creative Commons 0 Licence"
+
+"Sound-of-party" by "soundhunterjulie"
+https://freesound.org/people/soundhunterjulie/sounds/395315/
+Licence "Attribution Licence"
+
+
