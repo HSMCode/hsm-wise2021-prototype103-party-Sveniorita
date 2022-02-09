@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class PlayerScript : MonoBehaviour
 {
 
-
     public float movementSpeed;
 
     public GameObject player;
@@ -37,17 +36,10 @@ public class PlayerScript : MonoBehaviour
             //Player Movement when Button is pressed
             transform.Translate(Vector3.forward * Time.deltaTime * movementSpeed);
         }
-
-
  
     }
 
 
-    void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
-    }
 
     //Detect collisions between the GameObjects with Colliders attached
     private void OnCollisionEnter(Collision collision)
@@ -57,12 +49,20 @@ public class PlayerScript : MonoBehaviour
         if (collision.gameObject.tag == "Guest")
         {
 
-            //Damage when Player hits Guest
+            player.transform.position = spawnPoint.transform.position; // Reset Player Position
+                                                             
+            //Take Damage when Player hits Guest
             TakeDamage(25);
 
-            player.transform.position = spawnPoint.transform.position; // Reset Player Position
-            
         }
+
+
+        if (currentHealth <= 0)
+        {
+            //restart the scene when Health Bar expired
+            SceneManager.LoadScene("06_Lost Panel");
+        }
+
 
         // Check if Player collides with Finish (Tagged with Goal)
         if (collision.gameObject.tag == "Goal") 
@@ -72,14 +72,14 @@ public class PlayerScript : MonoBehaviour
 
         }
 
-        if (currentHealth <= 0)
-        {
-            //restart the scene when Health Bar expired
-            SceneManager.LoadScene("06_Lost Panel");
-        }
     }
 
-
+    
+    void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
+    }
 
 
     }

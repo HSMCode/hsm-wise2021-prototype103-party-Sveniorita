@@ -787,9 +787,33 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6788894444002433129, guid: 4bcbc078a6c0ac7408ed4a844f3a17b6, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6788894444002433129, guid: 4bcbc078a6c0ac7408ed4a844f3a17b6, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6788894444002433129, guid: 4bcbc078a6c0ac7408ed4a844f3a17b6, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6788894444739533900, guid: 4bcbc078a6c0ac7408ed4a844f3a17b6, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.0033569336
+      objectReference: {fileID: 0}
+    - target: {fileID: 6788894444739533903, guid: 4bcbc078a6c0ac7408ed4a844f3a17b6, type: 3}
+      propertyPath: m_Color.b
+      value: 0.29803923
+      objectReference: {fileID: 0}
+    - target: {fileID: 6788894444739533903, guid: 4bcbc078a6c0ac7408ed4a844f3a17b6, type: 3}
+      propertyPath: m_Color.g
+      value: 0.29411766
+      objectReference: {fileID: 0}
+    - target: {fileID: 6788894444739533903, guid: 4bcbc078a6c0ac7408ed4a844f3a17b6, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7568628
       objectReference: {fileID: 0}
     - target: {fileID: 6788894445140105550, guid: 4bcbc078a6c0ac7408ed4a844f3a17b6, type: 3}
       propertyPath: m_Pivot.x
@@ -885,7 +909,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6788894445140105584, guid: 4bcbc078a6c0ac7408ed4a844f3a17b6, type: 3}
       propertyPath: m_Value
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6788894445140105584, guid: 4bcbc078a6c0ac7408ed4a844f3a17b6, type: 3}
       propertyPath: m_MaxValue
@@ -1153,9 +1177,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1589961682}
     - target: {fileID: 7750340158758763181, guid: c4d9354faf70cf941ac8d5ffc8154266, type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750340158758763181, guid: c4d9354faf70cf941ac8d5ffc8154266, type: 3}
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 667213719}
+    - target: {fileID: 7750340158758763181, guid: c4d9354faf70cf941ac8d5ffc8154266, type: 3}
+      propertyPath: currentHealth
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8650305494128952290, guid: c4d9354faf70cf941ac8d5ffc8154266, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2438,6 +2470,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 653084798}
     m_Modifications:
+    - target: {fileID: 3190600700334254598, guid: 16dd3d17517cf264bac71264ea288815, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4582027164818979484, guid: 16dd3d17517cf264bac71264ea288815, type: 3}
       propertyPath: m_RootOrder
       value: 0
